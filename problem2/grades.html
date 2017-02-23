@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+	        <script src="grades.js" type="text/javascript"></script>
+
+	</head>
+
+
+
+<body>
+
+	<table style="empty-cells: hide">
+
+		<thead>
+
+			<th colspan="2">Input Grades:</th>
+
+		</thead>
+
+		<tr>
+
+			<td>Assignments</td>
+
+			<td><input id="assignments" type="text" onblur="calculateGrades()" value="0" /></td>	
+
+			</tr>
+
+		<tr>
+
+			<td>Project</td>
+
+			<td><input id="project" type="text" onblur="calculateGrades()" value="0" /></td>
+
+		</tr>
+
+		<tr>
+
+			<td>Quizzes</td>
+
+			<td><input id="quizzes" type="text" onblur="calculateGrades()" value="0" /></td>
+
+		</tr>
+
+		<tr>
+
+			<td>Participation</td>
+
+			<td><input id="participation" type="text" onblur="calculateGrades()" value="0" /></td>
+
+		</tr>
+
+		<tr>
+
+			<td>Final Exam</td>
+
+			<td><input id="final" type="text" onblur="calculateGrades()" value="0" /></td>
+
+		</tr>
+
+		<tr>
+
+			<td>Raise Coefficient</td>
+
+			<td><input id="raise" type="text" onblur="calculateGrades()" value="0" /></td>
+
+		</tr>
+
+	</table>
+
+<br><br>	
+
+	<table>
+
+		<thead>
+
+			<th colspan="2">Results:</th>
+
+		</thead>
+
+		<tr>
+
+			<td>Homework Average</td>
+
+			<td><input id="hwAverage" type="text" value="0" readonly /><td>
+
+		</tr>
+
+		<tr>
+
+			<td></td>
+
+			<td></td>
+
+		</tr>
+
+		<tr>
+
+			<td>Quiz Average</td>
+
+			<td><input id="quizzesAverage" type="text" value="0" readonly /><td>
+
+		</tr>
+
+		<tr>
+
+			<td></td>
+
+			<td></td>
+
+		</tr>
+
+		<tr>
+
+			<td>Course Overall Average</td>
+
+			<td><input id="courseAverage" type="text" value="0" readonly /><td>
+
+		</tr>
+
+		<tr>
+
+			<td>Raised Grade</td>
+
+			<td><input id="raisedGrade" type="text" value="0" readonly /><td>
+
+		</tr>
+
+	</table>
+
+</body>
+
+
+
+</html>
